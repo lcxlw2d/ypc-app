@@ -1,0 +1,71 @@
+{
+    "respHead": {
+        "respCode": "0000",
+        "respDetail": "ok"
+    },
+    "respBody": {
+        "nav":[
+            {
+                "title":"基金",
+                "route":"jijin",
+                "href":"#",
+                "icon":""
+            },
+            {
+                "title":"定期",
+                "route":"dingqi",
+                "href":"#",
+                "icon":""
+            },
+            {
+                "title":"活期",
+                "route":"huoqi",
+                "href":"#",
+                "icon":""
+            },
+            {
+                "title":"高端理财",
+                "route":"gaoduanlicai",
+                "href":"#",
+                "icon":""
+            },
+            {
+                "title":"黄金宝",
+                "route":"huangjinbao",
+                "href":"#",
+                "icon":""
+            },
+            {
+                "title":"基金定投",
+                "route":"jijindingtou",
+                "href":"#",
+                "icon":""
+            },
+            {
+                "title":"新发基金",
+                "route":"xinfajijin",
+                "href":"#",
+                "icon":""
+            },
+            {
+                "title":"我的理财",
+                "route":"wodelicai",
+                "href":"#",
+                "icon":""
+            }
+        ],
+        "activity": {
+            "actType": "新手",
+            "actTypeId": "",
+            "slogan": "1基搞定 2种投资",
+            "proId": "",
+            "proName": "天天网利宝35期A",
+            "proType": [
+                "基金",
+                "兴证资管"
+            ],
+            "basicRatio": "4.6",
+            "href": "#"
+        }
+    }
+}
