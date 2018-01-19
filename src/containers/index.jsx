@@ -1,5 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
+
 import '../assets/css/main.css'
 
 import Nav from '../components/Nav'
@@ -10,28 +12,25 @@ import Block from '../components/Block'
 class Index extends React.Component {
     constructor(props){
         super(props)
-        this.state = {
-            isLoading:true,
-            data:{}
-        }
     }
 
     componentDidMount(){
-        fetch('../../static/mock/homepage.json')
-        .then(resp => resp.json())
-        .then(data => {
-            this.setState({
-                isLoading:false,
-                data
-            })
-        })
+        // fetch('../../static/mock/homepage.json')
+        // .then(resp => resp.json())
+        // .then(data => {
+        //     this.setState({
+        //         isLoading:false,
+        //         data
+        //     })
+        // })
     }
 
 
     render() {
-        if(this.state.isLoading === false){
-            const navData = this.state.data.respBody.nav
-            const activityData = this.state.data.respBody.activity
+        console.log(this.props,'index.jsx的props')
+        if(this.props.homepageData.onReady){
+            const navData = this.props.homepageData.items.nav
+            const activityData = this.props.homepageData.items.activity
             return (
                 <div className="content">
                     {/* Nav Menu */}
@@ -158,8 +157,8 @@ class Index extends React.Component {
 
 } 
 
-// Index.prototype.propTypes = {
-//     msg: PropTypes.string
-// }
+const select = state => ({
+    homepageData:state.posts
+})
 
-export default Index
+export default connect(select)(Index)

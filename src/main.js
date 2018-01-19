@@ -3,12 +3,10 @@ import ReactDOM from 'react-dom'
 import App from './containers/App'
 import { AppContainer } from 'react-hot-loader'
 import { Provider } from 'react-redux'
-
 import { createStore, applyMiddleware } from 'redux'
 import thunkMiddleware from 'redux-thunk'
 import { createLogger } from 'redux-logger'
 import reducer from './redux/reducers/index'
-import { fetchPosts } from './redux/actions/index'
 
 const loggerMiddleware = createLogger()
 
@@ -17,7 +15,6 @@ const store = createStore(reducer,applyMiddleware(
     loggerMiddleware // 一个很便捷的 middleware，用来打印 action 日志
 ))
 
-store.dispatch(fetchPosts())
 
 const render = Component => {
   ReactDOM.render(

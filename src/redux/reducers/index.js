@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
-import { REQUEST_HOME, INVALIDATE_HOME, RECEIVE_HOME} from '../actions/index'
+import { REQUEST_HOME, INVALIDATE_HOME, RECEIVE_HOME} from '../constants/ActionTypes'
 
 const initialState = {
-  isFetching: false,
+  onReady: false,
   didInvalidate: false,
   items: []
 }
@@ -17,13 +17,13 @@ const posts = (state = initialState, action) => {
     case REQUEST_HOME:
       return {
         ...state,
-        isFetching: true,
+        onReady: false,
         didInvalidate: false
       } 
     case RECEIVE_HOME:
       return {
         ...state,
-        isFetching: false,
+        onReady: true,
         didInvalidate: false,
         items: action.posts,
         lastUpdated: action.receivedAt
