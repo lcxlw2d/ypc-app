@@ -29,8 +29,14 @@ class Index extends React.Component {
     render() {
         console.log(this.props,'index.jsx的props')
         if(this.props.homepageData.onReady){
-            const navData = this.props.homepageData.items.nav
-            const activityData = this.props.homepageData.items.activity
+            const { 
+                nav:navData,
+                activity:activityData,
+                hotFund:hotFundData,
+                regular:regularData,
+                current:currentData,
+                banners:bannerData 
+            } = this.props.homepageData.items
             return (
                 <div className="content">
                     {/* Nav Menu */}
@@ -40,112 +46,17 @@ class Index extends React.Component {
                     <Activity data={ activityData } />
             
                     {/* 热门 */}
-                    <Recmd />
+                    <Recmd data={ hotFundData } />
             
                     {/* block */}
-                    <Block />
+                    <Block data={ bannerData } />
                     {/* 定期 */}
-                    <div className="cf n_plate">
-                        <h3 className="cf n_h3">
-                            <a className="n_more" href="javascript:;">固定期限 省心理财</a>
-                            <span className="n_tit">精选定期</span>
-                        </h3>
-                        <div className="n_cont">
-                            <ul className="cf n_list2">
-                                <li className="tit">
-                                    <div className="list_left l_box">
-                                        <span className="n_redIncomes posi"><b>23.64</b><em>%</em></span>
-                                        <span className="n_gray">
-                                            近一年收益率
-                                        </span>
-                                    </div>
-                                    <div className="list_right">
-                                        <span className="n_title"><i>手快才有赚钱机会</i><s className="tip_title tip_1"></s></span>
-                                        <span className="n_detail"><em>兴全恒益债券基金</em> </span>
-                                    </div>
-                                </li>
-                                <li className="tit">
-                                    <div className="list_left l_box">
-                                        <span className="n_redIncomes minus"><b>-13.41</b><em>%</em></span>
-                                        <span className="n_gray">
-                                            近一年收益率
-                                        </span>
-                                    </div>
-                                    <div className="list_right">
-                                        <span className="n_title"><i>1基搞定 2种投资</i><s className="tip_title tip_2"></s></span>
-                                        <span className="n_detail"><em>兴全恒益债券基金</em> </span>
-                                    </div>
-                                </li>
-                                <li className="tit">
-                                    <div className="list_left l_box">
-                                        <span className="n_redIncomes posi"><b>31.72</b><em>%</em></span>
-                                        <span className="n_gray">
-                                            近一年收益率
-                                        </span>
-                                    </div>
-                                    <div className="list_right">
-                                        <span className="n_title"><i>手快才有赚钱机会</i><s className="tip_title tip_3"></s></span>
-                                        <span className="n_detail"><em>前海开源沪港深蓝筹</em> </span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    <Recmd data={ regularData } />
                     {/* block */}
-                    <div className="cf n_plate">
-                        <div className="n_cont n_banner">
-                            <a href="javascript:;">
-                                <span className="img_contain" style={ { background:'url()' , backgroundSize:'100%' } }></span>
-                            </a>
-                        </div>
-                    </div>
+                    <Block data={ bannerData } />
                     {/* 活期 */}
-                    <div className="cf n_plate">
-                        <h3 className="cf n_h3">
-                            <a className="n_more" href="javascript:;">闲置资金 安心理财</a>
-                            <span className="n_tit">精选活期</span>
-                        </h3>
-                        <div className="n_cont">
-                            <ul className="cf n_list2">
-                                <li className="tit">
-                                    <div className="list_left l_box">
-                                        <span className="n_redIncomes posi"><b>23.64</b><em>%</em></span>
-                                        <span className="n_gray">
-                                            近一年收益率
-                                        </span>
-                                    </div>
-                                    <div className="list_right">
-                                        <span className="n_title"><i>手快才有赚钱机会</i><s className="tip_title tip_1"></s></span>
-                                        <span className="n_detail"><em>兴全恒益债券基金</em> </span>
-                                    </div>
-                                </li>
-                                <li className="tit">
-                                    <div className="list_left l_box">
-                                        <span className="n_redIncomes minus"><b>-13.41</b><em>%</em></span>
-                                        <span className="n_gray">
-                                            近一年收益率
-                                        </span>
-                                    </div>
-                                    <div className="list_right">
-                                        <span className="n_title"><i>1基搞定 2种投资</i><s className="tip_title tip_2"></s></span>
-                                        <span className="n_detail"><em>兴全恒益债券基金</em> </span>
-                                    </div>
-                                </li>
-                                <li className="tit">
-                                    <div className="list_left l_box">
-                                        <span className="n_redIncomes posi"><b>31.72</b><em>%</em></span>
-                                        <span className="n_gray">
-                                            近一年收益率
-                                        </span>
-                                    </div>
-                                    <div className="list_right">
-                                        <span className="n_title"><i>手快才有赚钱机会</i><s className="tip_title tip_3"></s></span>
-                                        <span className="n_detail"><em>前海开源沪港深蓝筹</em> </span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    <Recmd data={ currentData } />
+                    
                 </div>
             )
         }else{
