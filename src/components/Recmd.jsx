@@ -9,8 +9,6 @@ class Recmd extends React.Component {
     render() {
         const data = this.props.data
         
-        console.warn(data)
-        
         return (
             <div className="cf n_plate">
                 <h3 className="cf n_h3">
