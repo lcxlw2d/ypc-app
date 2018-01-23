@@ -2,12 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
-import '../assets/css/main.css'
+import './style/main.css'
 
-import Nav from './Nav'
-import Activity from './Activity'
-import Recmd from './Recmd'
-import Block from './Block'
+import Nav from './nav/Nav'
+import Activity from './activity/Activity'
+import Recmd from './recmd/Recmd'
+import Banner from './banner/Banner'
 
 class Index extends React.Component {
     constructor(props){
@@ -37,11 +37,11 @@ class Index extends React.Component {
                     <Recmd data={ hotFundData } />
             
                     {/* block */}
-                    <Block data={ bannerData } />
+                    <Banner data={ bannerData } />
                     {/* 定期 */}
                     <Recmd data={ regularData } />
                     {/* block */}
-                    <Block data={ bannerData } />
+                    <Banner data={ bannerData } />
                     {/* 活期 */}
                     <Recmd data={ currentData } />
                     

@@ -9,11 +9,8 @@ import { fetchPosts } from '../redux/actions/index'
 
 
 import '../assets/js/remAdapter'
-import '../assets/css/main.css'
 
-import IndexCompo from '../components/index'
-import Nav from '../components/Nav'
-import Activity from '../components/Activity'
+import IndexCompo from '../components/homepage/index'
 
 class App extends React.Component {
     componentDidMount(){
