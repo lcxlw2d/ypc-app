@@ -1,5 +1,5 @@
 import React from 'react'
-import ListItem from './list/List-item'
+import ListItem from '../../common/list/List-item'
 
 class Recmd extends React.Component {
     constructor(props) {
