@@ -1,0 +1,174 @@
+{
+    "respHead": {
+        "respCode": "0000",
+        "respDetail": "ok"
+    },
+    "respBody": {
+        "nav": [
+            {
+                "title": "基金",
+                "route": "jijin",
+                "href": "#",
+                "icon": ""
+            },
+            {
+                "title": "定期",
+                "route": "dingqi",
+                "href": "#",
+                "icon": ""
+            },
+            {
+                "title": "活期",
+                "route": "huoqi",
+                "href": "#",
+                "icon": ""
+            },
+            {
+                "title": "高端理财",
+                "route": "gaoduanlicai",
+                "href": "#",
+                "icon": ""
+            },
+            {
+                "title": "黄金宝",
+                "route": "huangjinbao",
+                "href": "#",
+                "icon": ""
+            },
+            {
+                "title": "基金定投",
+                "route": "jijindingtou",
+                "href": "#",
+                "icon": ""
+            },
+            {
+                "title": "新发基金",
+                "route": "xinfajijin",
+                "href": "#",
+                "icon": ""
+            },
+            {
+                "title": "我的理财",
+                "route": "wodelicai",
+                "href": "#",
+                "icon": ""
+            }
+        ],
+        "activity": {
+            "actType": "新手",
+            "actTypeId": "",
+            "slogan": "1基搞定 2种投资",
+            "proId": "",
+            "proName": "天天网利宝35期A",
+            "proType": [
+                "基金",
+                "兴证资管"
+            ],
+            "basicRatio": "4.6",
+            "href": "#"
+        },
+        "hotFund": {
+            "type":"热门基金",
+            "title":"人气之选 投资热门",
+            "list": [
+                {
+                    "proId": "hf01",
+                    "proName": "兴业恒益债券基金",
+                    "slogan": "1基搞定 2种投资",
+                    "proType": "兴证理财",
+                    "purchasePrice": "1000",
+                    "profitRatio":"23.64",
+                    "url": ""
+                },
+                {
+                    "proId": "hf02",
+                    "proName": "兴业恒益债券基金",
+                    "slogan": "1基搞定 2种投资",
+                    "proType": "兴证理财",
+                    "purchasePrice": "1000",
+                    "profitRatio":"-13.41",                    
+                    "url": ""
+                },
+                {
+                    "proId": "hf03",
+                    "proName": "兴业恒益债券基金",
+                    "slogan": "1基搞定 2种投资",
+                    "proType": "兴证理财",
+                    "purchasePrice": "1000",
+                    "profitRatio":"31.72",                    
+                    "url": ""
+                }
+            ]
+        },
+        "regular": {
+            "type":"精选定期",
+            "title":"固定期限 省心理财",
+            "list": [
+                {
+                    "proId": "rg01",
+                    "proName": "天天万利宝35期A",
+                    "slogan": "98天 5万起购",
+                    "proType": "兴证资管",
+                    "profitRatio": "4.70",
+                    "url": ""
+                },
+                {
+                    "proId": "rg02",
+                    "proName": "天天万利宝35期A",
+                    "slogan": "98天 5万起购",
+                    "proType": "兴证资管",
+                    "profitRatio": "-4.70",
+                    "url": ""
+                },
+                {
+                    "proId": "rg03",
+                    "proName": "天天万利宝35期A",
+                    "slogan": "98天 5万起购",
+                    "proType": "兴证资管",
+                    "profitRatio": "4.70",
+                    "url": ""
+                }
+            ]
+        },
+        "current": {
+            "type":"精选活期",
+            "title":"闲置资金 安心理财",
+            "list": [
+                {
+                    "proId": "cr01",
+                    "proName": "兴权货币基金",
+                    "slogan": "10元起购 低风险",
+                    "proType": "兴证理财",
+                    "profitRatio": "4.30",
+                    "url": ""
+                },
+                {
+                    "proId": "cr02",
+                    "proName": "兴权货币基金",
+                    "slogan": "10元起购 低风险",
+                    "proType": "兴证理财",
+                    "profitRatio": "-4.30",
+                    "url": ""
+                },
+                {
+                    "proId": "cr03",
+                    "proName": "兴权货币基金",
+                    "slogan": "10元起购 低风险",
+                    "proType": "兴证理财",
+                    "profitRatio": "4.30",
+                    "url": ""
+                }
+            ]
+        },
+        "banners": [
+            {
+                "picUrl": "",
+                "url": ""
+            },
+            {
+                "picUrl": "",
+                "url": ""
+            }
+        ]
+    }
+}

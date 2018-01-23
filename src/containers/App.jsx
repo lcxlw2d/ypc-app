@@ -11,7 +11,7 @@ import { fetchPosts } from '../redux/actions/index'
 import '../assets/js/remAdapter'
 import '../assets/css/main.css'
 
-import IndexCompo from './index'
+import IndexCompo from '../components/index'
 import Nav from '../components/Nav'
 import Activity from '../components/Activity'
 

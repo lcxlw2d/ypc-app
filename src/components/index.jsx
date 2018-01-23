@@ -4,27 +4,15 @@ import { connect } from 'react-redux'
 
 import '../assets/css/main.css'
 
-import Nav from '../components/Nav'
-import Activity from '../components/Activity'
-import Recmd from '../components/Recmd'
-import Block from '../components/Block'
+import Nav from './Nav'
+import Activity from './Activity'
+import Recmd from './Recmd'
+import Block from './Block'
 
 class Index extends React.Component {
     constructor(props){
         super(props)
     }
-
-    componentDidMount(){
-        // fetch('../../static/mock/homepage.json')
-        // .then(resp => resp.json())
-        // .then(data => {
-        //     this.setState({
-        //         isLoading:false,
-        //         data
-        //     })
-        // })
-    }
-
 
     render() {
         console.log(this.props,'index.jsx的props')
